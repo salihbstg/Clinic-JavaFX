@@ -1,0 +1,33 @@
+#root {
+    -fx-background-image: url("resim/girisbg.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:stretch;
+}
+.btn_efect:hover{
+	-fx-background-color:red;
+	-fx-text-fill:white;
+	
+}
+#pane,#pane2{
+	-fx-opacity:0.9;
+	-fx-background-color:#231230;
+}
+
+#txttc,#txtsifre{
+	-fx-background-color:#587242;
+	-fx-text-fill:white;
+	-fx-font-weight:bold;
+}
+
+#btndoktorgiris{
+	-fx-text-fill:black;
+	-fx-font-weight:bold;
+}
+#btndoktorgiris:hover{
+	-fx-background-color:red;
+	-fx-text-fill:white;
+	
+}
+#logogiris{
+	-fx-image:url('resim/logo.png') ;
+}

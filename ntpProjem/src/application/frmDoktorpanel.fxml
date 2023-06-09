@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.frmDoktorpanelController">
+   <children>
+      <TableView id="table" fx:id="table" prefHeight="250.0" prefWidth="428.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="186.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tblid" prefWidth="88.79999083280563" text="Sıra" />
+          <TableColumn fx:id="tblad" prefWidth="182.40000915527344" text="Ad" />
+            <TableColumn fx:id="tblsoyad" prefWidth="154.80001831054688" text="Soyad" />
+            <TableColumn fx:id="tbltc" prefWidth="186.0" text="TC Numarası" />
+        </columns>
+      </TableView>
+      <VBox layoutX="614.0" layoutY="1.0" prefHeight="112.0" prefWidth="187.0" AnchorPane.bottomAnchor="338.0" AnchorPane.leftAnchor="614.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView id="logogiris" fitHeight="112.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <VBox layoutX="615.0" layoutY="145.0" prefHeight="210.0" prefWidth="174.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="617.0" AnchorPane.rightAnchor="7.0">
+         <children>
+            <Label text="Bir Sonraki Hastayı Çağır" />
+            <Button fx:id="btn_sonraki" mnemonicParsing="false" onAction="#sonraki_click" prefHeight="26.0" prefWidth="172.0" styleClass="btn_efect" text="Sonraki Hasta" />
+            <Label text="İçeride">
+               <font>
+                  <Font name="Elephant" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHasta" text="Salih Can Baştuğ 13945327262">
+               <font>
+                  <Font name="Elephant" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="lblDoktoradi" layoutX="620.0" layoutY="427.0" text="Label" />
+   </children>
+</AnchorPane>
